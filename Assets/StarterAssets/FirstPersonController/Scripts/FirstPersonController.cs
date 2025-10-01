@@ -18,7 +18,7 @@ namespace StarterAssets
 
         // -------- HUD / UI --------
         [Header("HUD / UI")]
-        public PlayerStats player;               // Assign in Inspector (falls back to GetComponent)
+                  // Assign in Inspector (falls back to GetComponent)
         private UIDocument _uiDoc;
         private ProgressBar _healthBar;
         private Label _ammoLabel;
@@ -132,7 +132,7 @@ namespace StarterAssets
             _jumpTimeoutDelta = JumpTimeout;
             _fallTimeoutDelta = FallTimeout;
 
-                        if (!player) player = GetComponent<PlayerStats>();
+
 
             // UI hookup (do this in Start so UIDocument is ready)
             _uiDoc = GetComponent<UIDocument>();
@@ -143,33 +143,9 @@ namespace StarterAssets
                 _ammoLabel = root.Q<Label>("AmmoLabel");
                 _weaponLabel = root.Q<Label>("WeaponLabel");
             }
-
-            // Subscribe + initialize HUD
-            if (player != null)
-            {
-                player.OnHealthChanged += UpdateHealth;
-                player.OnAmmoChanged += UpdateAmmo;
-                player.OnWeaponChanged += UpdateWeapon;
-
-                UpdateHealth(player.Health, player.maxHealth);
-                UpdateAmmo(player.AmmoInMag, player.AmmoReserve);
-                UpdateWeapon(player.WeaponName);
-            }
-            else
-            {
-                Debug.LogWarning("FirstPersonController: No PlayerStats found/assigned.");
-            }
         }
 
-        private void OnDestroy()
-        {
-            if (player != null)
-            {
-                player.OnHealthChanged -= UpdateHealth;
-                player.OnAmmoChanged -= UpdateAmmo;
-                player.OnWeaponChanged -= UpdateWeapon;
-            }
-        }
+        
 
         private void Update()
         {

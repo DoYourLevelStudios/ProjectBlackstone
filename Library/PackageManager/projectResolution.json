@@ -281,14 +281,6 @@
       "source": "builtin",
       "testable": false
     },
-    "com.unity.modules.assetbundle@1.0.0": {
-      "name": "com.unity.modules.assetbundle",
-      "displayName": "Asset Bundle",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.assetbundle",
-      "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
-    },
     "com.unity.modules.audio@1.0.0": {
       "name": "com.unity.modules.audio",
       "displayName": "Audio",
@@ -345,10 +337,10 @@
       "source": "builtin",
       "testable": false
     },
-    "com.unity.modules.particlesystem@1.0.0": {
-      "name": "com.unity.modules.particlesystem",
-      "displayName": "Particle System",
-      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.particlesystem",
+    "com.unity.modules.nvidia@1.0.0": {
+      "name": "com.unity.modules.nvidia",
+      "displayName": "NVIDIA",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.nvidia",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -517,6 +509,22 @@
       "name": "com.unity.modules.xr",
       "displayName": "XR",
       "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.xr",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.assetbundle@1.0.0": {
+      "name": "com.unity.modules.assetbundle",
+      "displayName": "Asset Bundle",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.assetbundle",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.particlesystem@1.0.0": {
+      "name": "com.unity.modules.particlesystem",
+      "displayName": "Particle System",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.43f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.particlesystem",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
